@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travello - About</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+    <div class="container-fluid">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold ms-3" href="#">Travello</a>
+
+        <!-- Mobile Menu Button -->
+        <button class="navbar-toggler d-lg-none me-3"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-4">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+
+<!-- =========================================================
+     MOBILE OFFCANVAS MENU
+========================================================= -->
+<div class="offcanvas offcanvas-end" id="mobileMenu">
+
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     HERO SECTION (FULL WIDTH / FULL HEIGHT)
+========================================================= -->
+<section id="home" class="hero-wrapper">
+
+    <div class="container-fluid p-0 img-fluid">
+        <img src="images/background/background_img8.jpg"
+             class="img-fluid w-100 hero-img">
+    </div>
+
+    <!-- Desktop Search Box -->
+    <div class="search-box d-none d-lg-block">
+
+        <div class="search-header">Search for your trip</div>
+
+        <div class="container-fluid py-3">
+            <div class="row g-3">
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control search-input" placeholder="City">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control search-input" placeholder="Departure">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control search-input" placeholder="Arrival">
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control search-input" placeholder="Budget">
+                </div>
+
+                <div class="col-md-1">
+                    <button class="btn btn-dark w-100 search-btn">Search</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     MOBILE/TABLET SEARCH BAR (STACKED)
+========================================================= -->
+<div class="mobile-search d-lg-none">
+
+    <div class="mobile-search-header">Search for your trip</div>
+
+    <div class="container py-3">
+        <div class="row gy-3">
+
+            <!-- Each input takes full width (col-12) -->
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="City">
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="Departure">
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="Arrival">
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="Budget">
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-dark w-100 mobile-search-btn">SEARCH</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<section class="news-page-section py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- LEFT SIDE — 3 BIG ARTICLES -->
+            <div class="col-lg-8 col-12">
+
+                <!-- ARTICLE 1 -->
+                <div class="news-article mb-5">
+                    <img src="images/illustration/img22.jpg" class="img-fluid w-100 rounded mb-3">
+                    <h4 class="news-number">02</h4>
+                    <h3 class="news-title">Best tips to travel light</h3>
+                    <p class="news-text">
+                        Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo. Vivamus massa.Tempor massa et laoreet.
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <!-- ARTICLE 2 -->
+                <div class="news-article mb-5">
+                    <img src="images/illustration/img23.jpg" class="img-fluid w-100 rounded mb-3">
+                    <h4 class="news-number">02</h4>
+                    <h3 class="news-title">10 Amazing Destination for you this summer</h3>
+                    <p class="news-text">
+                        Tempor massa et laoreet malesuada. Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <!-- ARTICLE 3 -->
+                <div class="news-article mb-5">
+                    <img src="images/illustration/img24.jpg" class="img-fluid w-100 rounded mb-3">
+                    <h4 class="news-number">02</h4>
+                    <h3 class="news-title">How to organize your perfect vacation</h3>
+                    <p class="news-text">
+                        Vivamus massa.Tempor massa et laoreet malesuada. Aliquam nulla nisl, accumsan sit amet mattis.
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE — CATEGORIES + LATEST NEWS + OFFER -->
+            <div class="col-lg-4 col-12">
+
+                <!-- Categories -->
+                <div class="news-sidebar mb-5">
+                    <h5 class="sidebar-title">Categories</h5>
+                    <ul class="sidebar-list">
+                        <li>Travels</li>
+                        <li>Organization</li>
+                        <li>Tips & Tricks</li>
+                        <li>Uncategorized</li>
+                    </ul>
+                </div>
+
+                <!-- Latest News -->
+                <div class="news-sidebar mb-5">
+                    <h5 class="sidebar-title">Latest News</h5>
+
+                    <div class="latest-item d-flex mb-3">
+                        <img src="images/illustration/img25.jpg" class="rounded latest-img">
+                        <div class="ms-3">
+                            <h6 class="latest-title">Best tips to travel light</h6>
+                            <p class="latest-date">02 June</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-item d-flex mb-3">
+                        <img src="images/illustration/img26.jpg" class="rounded latest-img">
+                        <div class="ms-3">
+                            <h6 class="latest-title">Best tips to travel light</h6>
+                            <p class="latest-date">01 June</p>
+                        </div>
+                    </div>
+
+                    <div class="latest-item d-flex">
+                        <img src="images/illustration/img27.jpg" class="rounded latest-img">
+                        <div class="ms-3">
+                            <h6 class="latest-title">Best tips to travel light</h6>
+                            <p class="latest-date">29 May</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offer Card -->
+                <div class="offer-card-wrapper mb-5">
+
+    <div class="offer-card position-relative">
+
+        <!-- Offer Image -->
+        <img src="images/background/background_img4.jpg" class="img-fluid offer-img">
+
+        <!-- Pink overlay -->
+        <div class="offer-overlay"></div>
+
+        <!-- Text -->
+        <div class="offer-text">
+            <h2>Get a 20% <br> Discount</h2>
+            <p>Buy Your Vacation Online Now</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- ================= FOOTER SECTION ================= -->
+<section id="contact" class="footer-section d-flex align-items-center"
+         style="background: url('images/background/background_img5.jpg') center/cover no-repeat;">
+    <div class="container text-center text-white">
+
+        <!-- Heading -->
+        <h2 class="footer-title">
+            Subscribe to our newsletter to get the latest trends & news
+        </h2>
+        <p class="footer-subtitle">Join our database NOW!</p>
+
+        <!-- Newsletter Form -->
+        <form class="row g-2 justify-content-center footer-form">
+
+            <div class="col-lg-3 col-md-4 col-12">
+                <input type="text" class="form-control footer-input" placeholder="Name">
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12">
+                <input type="email" class="form-control footer-input" placeholder="Your e-mail">
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-12">
+                <button type="submit" class="btn btn-footer w-100">SUBSCRIBE</button>
+            </div>
+
+        </form>
+
+        <!-- Contact Columns -->
+        <div class="row footer-info mt-5">
+
+            <!-- Column 1 -->
+            <div class="col-lg-4 col-12 mb-5 footer-box">
+                <img src="images/illustration/sign.svg" class="footer-icon mb-3" alt="">
+                <h5>GIVE US A CALL</h5>
+                <p class="info-text">
+                    Office Landline: +44 5567 32 664 567<br>
+                    Mobile: +44 5567 89 3322 332
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-lg-4 col-12 mb-5 footer-box">
+                <img src="images/illustration/trekking.svg" class="footer-icon mb-3" alt="">
+                <h5>COME & DROP BY</h5>
+                <p class="info-text">
+                    4124 Barnes Street, Sanford,<br>
+                    FL 32771
+                </p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-lg-4 col-12 mb-5 footer-box">
+                <img src="images/illustration/around.svg" class="footer-icon mb-3" alt="">
+                <h5>SEND US A MESSAGE</h5>
+                <p class="info-text">
+                    youremail@gmail.com<br>
+                    office@yourbusinessname.com
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

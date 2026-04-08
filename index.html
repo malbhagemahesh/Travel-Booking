@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travello</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- =================== NAVBAR =================== -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+    <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold ms-3" href="#">Travello</a>
+
+        <!-- Mobile hamburger -->
+        <button class="navbar-toggler d-lg-none me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-4">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- =================== MOBILE OFFCANVAS MENU =================== -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- =================== HERO SECTION =================== -->
+<section id="home" class="hero-section d-flex align-items-center justify-content-center"
+         style="
+            width:100%;
+            height:100vh;
+            background:url('images/background/background_img1.jpg') no-repeat center center;
+            background-size:cover;
+         ">
+    
+    <div class="text-center">
+        <h1 class="hero-title">Let us take you away</h1>
+    </div>
+
+    <!-- Right-side vertical items (desktop only) -->
+    <div class="hero-side d-none d-lg-flex flex-column text-end">
+        <span>Offers <strong>01</strong></span>
+        <span>Testimonials <strong>02</strong></span>
+        <span>Latest <strong>03</strong></span>
+    </div>
+
+    <!-- Search box (desktop only) -->
+    <div class="search-box d-none d-lg-block">
+        <div class="search-header">Search for your trip</div>
+
+        <div class="container-fluid py-3">
+            <div class="row g-3">
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control search-input" placeholder="City">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control search-input" placeholder="Departure">
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" class="form-control search-input" placeholder="Arrival">
+                </div>
+
+                <div class="col-md-2">
+                    <input type="text" class="form-control search-input" placeholder="Budget">
+                </div>
+
+                <div class="col-md-1">
+                    <button class="btn btn-dark w-100 search-btn">Search</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!-- =================== MOBILE/TABLET SEARCH (STACKED) =================== -->
+<div class="mobile-search d-lg-none">
+    <div class="mobile-search-header">Search for your trip</div>
+
+    <div class="container py-3">
+        <div class="row gy-3">
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="City">
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="Departure">
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="Arrival">
+            </div>
+
+            <div class="col-12">
+                <input type="text" class="form-control mobile-input" placeholder="Budget">
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-dark w-100 mobile-search-btn">SEARCH</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =================== FEATURES SECTION (DESKTOP ONLY) =================== -->
+<section id="about" class="features-section d-none d-lg-block"
+         style="background: url('images/background/background_image2.png') 
+         no-repeat center center/cover;">
+
+    <div class="container features-content">
+        <div class="row text-center">
+
+            <div class="col-lg-4">
+                <img src="images/illustration/beach.svg" class="feature-icon">
+                <h4>Top Destinations</h4>
+                <p>Nulla pretium tincidunt felis, nec.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="images/illustration/wallet.svg" class="feature-icon">
+                <h4>The Best Prices</h4>
+                <p>Sollicitudin mauris lobortis in.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="images/illustration/suitcase.svg" class="feature-icon">
+                <h4>Amazing Services</h4>
+                <p>Nulla pretium tincidunt felis, nec.</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =================== MOBILE/TABLET FEATURES =================== -->
+<section id="about" class="mobile-features d-lg-none">
+
+    <div class="feature-item">
+        <img src="images/illustration/beach.svg" class="mobile-feature-icon" alt="">
+        <div>
+            <h4>Top Destinations</h4>
+            <p>Nulla pretium tincidunt felis, nec.</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <img src="images/illustration/wallet.svg" class="mobile-feature-icon" alt="">
+        <div>
+            <h4>The Best Prices</h4>
+            <p>Sollicitudin mauris lobortis in.</p>
+        </div>
+    </div>
+
+    <div class="feature-item">
+        <img src="images/illustration/suitcase.svg" class="mobile-feature-icon" alt="">
+        <div>
+            <h4>Amazing Services</h4>
+            <p>Nulla pretium tincidunt felis, nec.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =================== POPULAR DESTINATIONS TITLE =================== -->
+<section id="services" class="popular-title-section">
+    <div class="popular-subtitle">SIMPLY AMAZING PLACES</div>
+    <h2 class="popular-title">Popular Destinations</h2>
+</section>
+
+
+
+
+<!-- =================== POPULAR DESTINATIONS GRID (BOOTSTRAP 12-GRID) =================== -->
+<section class="popular-grid-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                <img src="images/illustration/img1.jpg" class="img-fluid rounded">
+                <h3 class="popular-place mt-3">Bali</h3>
+                <p class="popular-desc">Nulla pretium tincidunt felis, nec.</p>
+                <p class="popular-price">From $679</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                <img src="images/illustration/img2.jpg" class="img-fluid rounded">
+                <h3 class="popular-place mt-3">Indonesia</h3>
+                <p class="popular-desc">Nulla pretium tincidunt felis, nec.</p>
+                <p class="popular-price">From $679</p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                <img src="images/illustration/img3.jpg" class="img-fluid rounded">
+                <h3 class="popular-place mt-3">San Francisco</h3>
+                <p class="popular-desc">Nulla pretium tincidunt felis, nec.</p>
+                <p class="popular-price">From $679</p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                <img src="images/illustration/img4.jpg" class="img-fluid rounded">
+                <h3 class="popular-place mt-3">Paris</h3>
+                <p class="popular-desc">Nulla pretium tincidunt felis, nec.</p>
+                <p class="popular-price">From $679</p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                <img src="images/illustration/img5.jpg" class="img-fluid rounded">
+                <h3 class="popular-place mt-3">Phi Phi Island</h3>
+                <p class="popular-desc">Nulla pretium tincidunt felis, nec.</p>
+                <p class="popular-price">From $679</p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                <img src="images/illustration/img6.jpg" class="img-fluid rounded">
+                <h3 class="popular-place mt-3">Mykonos</h3>
+                <p class="popular-desc">Nulla pretium tincidunt felis, nec.</p>
+                <p class="popular-price">From $679</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =================== TESTIMONIALS SECTION =================== -->
+<section class="testimonials-section"
+         style="background: url('images/background/background_img3.jpg') no-repeat center center/cover;">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LEFT CONTENT (ALWAYS VISIBLE) -->
+            <div class="col-12 col-lg-9 text-center text-lg-start testimonials-left">
+
+                <div class="testimonials-sub">SIMPLY AMAZING PLACES</div>
+
+                <h2 class="testimonials-title">Testimonials</h2>
+
+                <p class="testimonials-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. lobortis dolor. 
+                    Cras placerat lectus a posuere aliquet. Curabitur quis vehicula odio.
+                </p>
+
+                <p class="testimonials-client">JOHN TURNER, <span>CLIENT</span></p>
+            </div>
+
+            <!-- RIGHT SIDE LABELS (DESKTOP ONLY) -->
+            <div class="col-lg-3 d-none d-lg-block text-end testimonials-right">
+
+                <p>City Breaks Clients <span>01</span></p>
+                <p>Cruises Clients <span>02</span></p>
+                <p>All Inclusive Clients <span>03</span></p>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+<!-- =================== NEWS + OFFER SECTION =================== -->
+<section id="news" class="news-section">
+    <div class="container">
+        <div class="row">
+
+            <!-- LEFT SIDE ARTICLES (desktop + tablet only) -->
+            <div class="col-lg-8 col-12">
+
+                <!-- ARTICLE 1 -->
+                <div class="row small-article mb-5 d-none d-sm-flex">
+                    <div class="col-12 col-sm-5">
+                        <img src="images/illustration/news_1.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-12 col-sm-7">
+                        <h2 class="news-date">02 <span>JUNE</span></h2>
+                        <h3 class="news-title">Best tips to travel light</h3>
+                        <p class="news-category">LIFESTYLE & TRAVEL</p>
+                        <p class="news-text">
+                            Pellentesque sit amet elementum ccumsan sit amet mattis eget, tristique at leo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ARTICLE 2 -->
+                <div class="row small-article mb-5 d-none d-sm-flex">
+                    <div class="col-12 col-sm-5">
+                        <img src="images/illustration/news_2.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-12 col-sm-7">
+                        <h2 class="news-date">01 <span>JUNE</span></h2>
+                        <h3 class="news-title">Best tips to travel light</h3>
+                        <p class="news-category">LIFESTYLE & TRAVEL</p>
+                        <p class="news-text">
+                            Tempor massa et laoreet malesuada. Pellentesque sit amet elementum ccumsan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ARTICLE 3 -->
+                <div class="row small-article mb-5 d-none d-sm-flex">
+                    <div class="col-12 col-sm-5">
+                        <img src="images/illustration/news_3.jpg" class="img-fluid rounded">
+                    </div>
+                    <div class="col-12 col-sm-7">
+                        <h2 class="news-date">29 <span>MAY</span></h2>
+                        <h3 class="news-title">Best tips to travel light</h3>
+                        <p class="news-category">LIFESTYLE & TRAVEL</p>
+                        <p class="news-text">
+                            Vivamus massa. Tempus massa et laoreet malesuada. Aliquam nulla nisl.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+           <!-- RIGHT SIDE BIG OFFER CARD -->
+<div class="col-lg-4 col-12">
+    <div class="offer-card position-relative">
+
+        <!-- Background Image -->
+        <img src="images/background/background_img4.jpg" class="img-fluid offer-img">
+
+        <!-- Pink angled overlay -->
+        <div class="offer-overlay"></div>
+
+        <!-- Text on top of overlay -->
+        <div class="offer-text">
+            <h2>Get a 20% <br> Discount</h2>
+            <p>Buy Your Vacation Online Now</p>
+        </div>
+
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- ================= FOOTER SECTION ================= -->
+<section id="contact" class="footer-section d-flex align-items-center"
+         style="background: url('images/background/background_img5.jpg') center/cover no-repeat;">
+    <div class="container text-center text-white">
+
+        <!-- Heading -->
+        <h2 class="footer-title">
+            Subscribe to our newsletter to get the latest trends & news
+        </h2>
+        <p class="footer-subtitle">Join our database NOW!</p>
+
+        <!-- Newsletter Form -->
+        <form class="row g-2 justify-content-center footer-form">
+
+            <div class="col-lg-3 col-md-4 col-12">
+                <input type="text" class="form-control footer-input" placeholder="Name">
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-12">
+                <input type="email" class="form-control footer-input" placeholder="Your e-mail">
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-12">
+                <button type="submit" class="btn btn-footer w-100">SUBSCRIBE</button>
+            </div>
+
+        </form>
+
+        <!-- Contact Columns -->
+        <div class="row footer-info mt-5">
+
+            <!-- Column 1 -->
+            <div class="col-lg-4 col-12 mb-5 footer-box">
+                <img src="images/illustration/sign.svg" class="footer-icon mb-3" alt="">
+                <h5>GIVE US A CALL</h5>
+                <p class="info-text">
+                    Office Landline: +44 5567 32 664 567<br>
+                    Mobile: +44 5567 89 3322 332
+                </p>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-lg-4 col-12 mb-5 footer-box">
+                <img src="images/illustration/trekking.svg" class="footer-icon mb-3" alt="">
+                <h5>COME & DROP BY</h5>
+                <p class="info-text">
+                    4124 Barnes Street, Sanford,<br>
+                    FL 32771
+                </p>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-lg-4 col-12 mb-5 footer-box">
+                <img src="images/illustration/around.svg" class="footer-icon mb-3" alt="">
+                <h5>SEND US A MESSAGE</h5>
+                <p class="info-text">
+                    youremail@gmail.com<br>
+                    office@yourbusinessname.com
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

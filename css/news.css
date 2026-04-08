@@ -1,0 +1,356 @@
+/* =========================================================
+   NAVBAR STYLES
+========================================================= */
+/* Make navbar sticky */
+.custom-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(0,0,0,0.7); /* Slightly darker for visibility when scrolling */
+    backdrop-filter: blur(6px);
+}
+
+
+
+
+/* =========================================================
+   HERO TITLE (not used but kept for structure)
+========================================================= */
+.hero-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.hero-img {
+    width: 100%;
+    height: 45vh;                  /* default for mobile */
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* =========================================================
+   DESKTOP SEARCH BOX
+========================================================= */
+.search-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding-bottom: 20px;
+    z-index: 5;
+}
+.search-header {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 14px 14px 0 0;
+    font-weight: 600;
+}
+
+.search-input {
+    background: transparent !important;
+    border: none;
+    border-bottom: 2px solid #d0d0d0;
+    border-radius: 0;
+}
+
+.search-input:focus {
+    border-bottom: 2px solid #000;
+    box-shadow: none;
+}
+
+.search-btn {
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+
+/* =========================================================
+   MOBILE/TABLET SEARCH BAR
+========================================================= */
+.mobile-search {
+    background: white;
+    padding: 40px 0;
+}
+
+.mobile-search-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile-input {
+    background: #f1f4f6;
+    border: none;
+    padding: 15px;
+}
+
+.mobile-input:focus {
+    box-shadow: none;
+}
+
+.mobile-search-btn {
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+/* Shared styles */
+.news-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+.read-more {
+    color: #000 !important;     /* Black text */
+    font-weight: 700 !important; /* Bold */
+    text-decoration: none;       /* Remove underline */
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.sidebar-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.latest-img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.news-title {
+        font-size: 20px;
+    }
+
+
+/* OFFER CARD WRAPPER */
+.offer-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* IMAGE */
+.offer-img {
+    width: 100%;
+    height: 650px;   /* Bigger height */
+    object-fit: cover;
+    display: block;
+}
+
+/* PINK OVERLAY (angled) */
+.offer-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;   /* Bigger overlay like screenshot */
+    background: rgba(214, 49, 98, 0.92);
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+}
+
+/* TEXT OVERLAY */
+.offer-text {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.offer-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.offer-text p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ .offer-img {
+        height: 500px;
+    }
+    .offer-text h2 {
+        font-size: 34px;
+    }
+    .offer-text p {
+        font-size: 16px;
+    }
+    .offer-text {
+        bottom: 50px;
+    }
+
+
+
+
+.footer-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.footer-input {
+    background: rgba(255,255,255,0.3);
+    border: none;
+    color: #fff;
+}
+
+.footer-input::placeholder {
+    color: #eee;
+}
+
+.btn-footer {
+    background: rgba(255,255,255,0.4);
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer-icon {
+    width: 60px;
+    opacity: 0.9;
+}
+
+.info-text {
+    opacity: 0.9;
+}
+
+.footer-title {
+        font-size: 26px;
+    }
+
+    .footer-form .col-12 {
+        padding: 0 20px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+
+
+/* =========================================================
+   MIN-WIDTH: 768px (Tablet)
+========================================================= */
+@media (min-width: 768px) {
+
+    .hero-img {
+        height: 60vh;      /* Larger hero for tablet */
+    }
+
+    .search-box {
+        width: 80%;        /* Reduce width for tablets */
+    }
+
+     .news-title {
+        font-size: 22px;
+    }
+
+     .offer-img {
+        height: 580px;
+    }
+    .offer-text h2 {
+        font-size: 40px;
+    }
+    .offer-text p {
+        font-size: 18px;
+    }
+    .offer-overlay {
+        height: 50%;
+    }
+
+
+     .footer-title {
+        font-size: 30px;
+    }
+
+    .footer-box {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* =========================================================
+   MIN-WIDTH: 992px (Desktop)
+========================================================= */
+@media (min-width: 992px) {
+
+    .hero-img {
+        height: 65vh;      /* Desktop hero height */
+    }
+
+    .search-box {
+        width: 75%;
+        top: 55%;
+    }
+
+    .news-page-section .col-lg-8 {
+        padding-right: 40px;
+    }
+    .news-page-section .col-lg-4 {
+        padding-left: 40px;
+    }
+
+    .offer-img {
+        height: 720px; /* Big desktop version */
+    }
+    .offer-text h2 {
+        font-size: 50px;
+    }
+    .offer-text p {
+        font-size: 22px;
+    }
+
+
+     .footer-title {
+        font-size: 36px;
+    }
+
+    .footer-section {
+        padding: 140px 0;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+}

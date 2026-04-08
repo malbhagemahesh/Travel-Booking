@@ -1,0 +1,422 @@
+/* =========================================================
+   NAVBAR STYLES
+========================================================= */
+/* Make navbar sticky */
+.custom-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(0,0,0,0.7); /* Slightly darker for visibility when scrolling */
+    backdrop-filter: blur(6px);
+}
+
+
+
+
+/* =========================================================
+   HERO TITLE (not used but kept for structure)
+========================================================= */
+.hero-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+
+/* =========================================================
+   DESKTOP SEARCH BOX
+========================================================= */
+.search-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding-bottom: 20px;
+    z-index: 5;
+}
+
+.search-header {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 14px 14px 0 0;
+    font-weight: 600;
+}
+
+.search-input {
+    background: transparent !important;
+    border: none;
+    border-bottom: 2px solid #d0d0d0;
+    border-radius: 0;
+}
+
+.search-input:focus {
+    border-bottom: 2px solid #000;
+    box-shadow: none;
+}
+
+.search-btn {
+    height: 100%;
+    border-radius: 8px;
+}
+
+
+
+/* =========================================================
+   MOBILE/TABLET SEARCH BAR
+========================================================= */
+.mobile-search {
+    background: white;
+    padding: 40px 0;
+}
+
+.mobile-search-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile-input {
+    background: #f1f4f6;
+    border: none;
+    padding: 15px;
+}
+
+.mobile-input:focus {
+    box-shadow: none;
+}
+
+.mobile-search-btn {
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
+
+.about-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #888;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-text {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.about-img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+
+/* Base styles (mobile first) */
+.counters-section {
+    padding: 60px 0;
+}
+
+.counter-box {
+    text-align: center;
+}
+
+.counter-icon {
+    width: 80px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.counter-number {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.counter-label {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+/* ===== BASE STYLES (MOBILE FIRST) ===== */
+
+.choose-subtitle {
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.choose-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.choose-card {
+    position: relative;
+}
+
+.choose-icon {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    z-index: 10;
+}
+
+.choose-icon img {
+    width: 45px;
+}
+
+.choose-card-inner {
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.choose-img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.choose-heading {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.choose-text {
+    color: #666;
+    padding: 0 25px;
+    font-size: 15px;
+}
+
+
+
+/* IMAGE ROUND STYLE */
+.team-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* TYPOGRAPHY */
+.team-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.team-title {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.team-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.team-text {
+    max-width: 250px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 15px;
+}
+
+
+
+.footer-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.footer-input {
+    background: rgba(255,255,255,0.3);
+    border: none;
+    color: #fff;
+}
+
+.footer-input::placeholder {
+    color: #eee;
+}
+
+.btn-footer {
+    background: rgba(255,255,255,0.4);
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer-icon {
+    width: 60px;
+    opacity: 0.9;
+}
+
+.info-text {
+    opacity: 0.9;
+}
+
+.footer-title {
+        font-size: 26px;
+    }
+
+    .footer-form .col-12 {
+        padding: 0 20px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+
+
+/* ======================= TABLET VIEW (MIN-WIDTH: 768px) ======================= */
+@media (min-width: 768px) {
+
+    .about-title {
+        font-size: 36px;
+    }
+
+    .about-heading {
+        font-size: 17px;
+    }
+
+    .counter-number {
+        font-size: 48px;
+    }
+
+    .choose-title {
+        font-size: 45px;
+    }
+
+    .team-title {
+        font-size: 42px;
+    }
+
+    .footer-title {
+        font-size: 30px;
+    }
+
+    .footer-box {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+/* ======================= DESKTOP VIEW (MIN-WIDTH: 992px) ======================= */
+@media (min-width: 992px) {
+
+    .about-title {
+        font-size: 42px;
+    }
+
+    .about-heading {
+        font-size: 18px;
+    }
+
+    .about-img {
+        margin-top: 0;
+    }
+
+     .counter-box {
+        margin-bottom: 0;
+    }
+
+    .counter-number {
+        font-size: 52px;
+    }
+
+    .counter-icon {
+        width: 90px;
+    }
+
+    .choose-title {
+        font-size: 50px;
+    }
+
+    .choose-img {
+        height: 270px;
+    }
+
+        .team-title {
+        font-size: 48px;
+    }
+
+    .team-img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .footer-title {
+        font-size: 36px;
+    }
+
+    .footer-section {
+        padding: 140px 0;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+}
